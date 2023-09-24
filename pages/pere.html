@@ -1,0 +1,128 @@
+	<!DOCTYPE html>
+	<html lang="fr">
+	<head>
+		<title>Père</title>
+		<meta charset="utf-8">
+		<meta name="keywords" content="Kaamelott">
+		<meta name="author" lang="fr" content="Marc Arthur KADANGHA ">
+		<meta name="Description" content="Ce site est un site vitrine sur la série Kamelott. Il a été en P20  dans le cadre de l UE MM01 de l Université de Technologie de Troyes sous la tutelle de Nicolas THOREL." >
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../style/style.css">
+		<!--Favicon du site-->
+		<link rel="shortcut icon" type="image/jpg" href="../img/favicon.jpg"/>
+	</head>
+	 
+	<body class=bconteneur>
+	 <div class=lim> <!--Limite le contenu à 1280 px-->
+	    <header>
+		   <a href="../index.html"><h1 id=ancre1> Kaamelott</h1></a>
+		</header>
+		<!-- Menu de navigation sur  ordinateur-->
+
+		<nav >
+			 <ul>
+	    <li class="deroulant"><a href="presentation.html">Présentation ▼ </a>
+	      <ul >
+	        <li><a href="personnages.html">Personnages</a></li>
+	        <li><a href="saisons.html">Saisons</a></li>
+	        <li><a href="repliques.html">Répliques</a></li>
+	      </ul>
+	    </li>
+	    <li class="deroulant" ><a href="references.html">Références historiques▼</a>
+	      <ul>
+	        <li><a href="generales.html">Générales</a></li>
+	        <li><a href="excalibur.html">Excalibur</a></li>
+	        <li><a href="quete.html">Quête du Graal</a></li>
+	      </ul>
+	    </li>
+	    <li class="deroulant"><a href="film.html">Film</a></li>
+	        <li class="deroulant"><a href="#">Famille Astier ▼</a>
+	      <ul >
+	        <li><a href="fils.html">Fils</a></li>
+	        <li><a href="pere.html"  class=active>Père</a></li>
+	      </ul>
+	    </li>
+	      <li class="deroulant"><a href="#">Quiz ▼</a>
+	      <ul class="sous">
+	        <li><a href="quiza.html">Débutant</a></li>
+	        <li><a href="quizb.html">Connaisseur</a></li>
+	      </ul>
+	    </li>
+	    <li class="deroulant"><a href="contact.html">Contact</a></li>
+	  </ul>
+
+	 </nav>
+
+		<!-- Menu de navigation sur tablette et mobile-->
+	<div class="topnav" id="myTopnav">
+	                
+	                <a href="presentation.html">Présentation</a>
+	                    <a href="personnages.html" style="text-indent: 2em;">Personnages</a>
+	                    <a href="saisons.html" style="text-indent: 2em;">Saisons</a>
+	                    <a href="repliques.html" style="text-indent: 2em;">Répliques</a>
+	                <a href="references.html">Réferences Historiques</a>
+					<a href="generales.html" style="text-indent: 2em;">Générales</a>
+	                <a href="excalibur.html" style="text-indent: 2em;">Excalibur</a>
+	                <a href="quete.html" style="text-indent: 2em;">Quête du Graal </a>
+	                <a href=film.html> Film</a>
+	                <a href=#>Famille Astier</a>
+	                 <a href="fils.html" style="text-indent: 2em;">Fils</a>
+	                <a href="pere.html"  class=active style="text-indent: 2em;">Père</a>
+	                <a href="#">Quiz</a>
+	                <a href="quiza.html" style="text-indent: 2em;">Débutant</a>
+	                <a href="quizb.html" style="text-indent: 2em;">Connaisseur</a>
+	                <a href="contact.html">Contact</a>
+
+	                <a href="javascript:void(0);" style="font-size:15px;" class="icon container" onclick="deroul(); Bar(this)" >
+	                    <div class="bar1"></div>
+	                    <div class="bar2"></div>
+	                    <div class="bar3"></div>
+	                </a>
+				</div>
+				
+				<div class=conteneur>
+					
+						<div class=container>
+							<!--texte + image de lionnel-->
+							<div class=container40>
+								<img src=../img/lionel.jpg alt=ui>
+							</div>
+							<div class=container60>
+	                       		<p>  Lionnel Astier, né le 31 octobre 1953 à Alès, est un auteur de théâtre, acteur et metteur en scène français. Il est surtout connu pour son rôle de Léodagan dans la série Kaamelott de M6 et pour son rôle de Neil Mac Kormack, dans la série télévisée Hero Corp diffusée sur France 4 et Game One.Auteur et metteur en scène, Lionnel Astier a écrit une dizaine de pièces de théâtre et joué dans une soixantaine de pièces, classiques, modernes et comédies, dont Pourquoi j'ai jeté ma grand-mère dans le Vieux-Port au Théâtre national La Criée à Marseille en 2010. Il a joué dans plus de quatre-vingts téléfilms.</p>
+							</div>
+						</div>
+						<div class=container>
+							<!--Filmographie-->
+							<ul>
+								<li>2013 : Paris à tout prix de Reem Kherici : Le Consul de France au Maroc </li>
+								<li>2016 : Le Fantôme de Canterville de Yann Samuell : Alain </li>
+								<li>2017 : L'Embarras du choix d'Eric Lavaine : Richard </li>
+								<li>2017 : Jour J de Reem Kherici : Gérard </li>
+								<li>2020 : Kaamelott : Premier Volet d'Alexandre Astier : Léodagan </li>
+							</ul>
+						</div>
+					
+				</div>
+					<!--Javascript de spages du menu burger-->		
+	           <script>
+				  function deroul() {
+					var x = document.getElementById("myTopnav");
+					if (x.className === "topnav") {
+					  x.className += " responsive";
+					} else {
+					  x.className = "topnav";
+					}
+				  }
+					function Bar(x) {
+					x.classList.toggle("change");
+				  }
+					</script>
+		<!--pied de page-->
+		<footer>
+			<div style="float:left">Marc-Arthur Kadangha/Kaamelott ©</div> 
+			<a  href=#ancre1 style="margin-left: 35%"> Haut de page</a>
+		</footer>
+		</div>	
+
+	</body>
+	</html>

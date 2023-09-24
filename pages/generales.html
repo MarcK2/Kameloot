@@ -1,0 +1,116 @@
+  <!DOCTYPE html>
+  <html lang="fr">
+  <head>
+  	<title>Générales</title>
+  	<meta charset="utf-8">
+  	<meta name="keywords" content="Kaamelott">
+  	<meta name="author" lang="fr" content="Marc Arthur KADANGHA ">
+  	<meta name="Description" content="Ce site est un site vitrine sur la série Kamelott. Il a été en P20  dans le cadre de l UE MM01 de l Université de Technologie de Troyes sous la tutelle de Nicolas THOREL." >
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="../style/style.css">
+  	<link rel="shortcut icon" type="image/jpg" href="../img/favicon.jpg"/>
+  	
+  </head>
+   
+  <body class=bconteneur>
+    <div class="lim"> <!-- limite le contenu à 1280px-->
+      <header>
+  	   <a href="../index.html"><h1 id=ancre1> Kaamelott</h1></a>
+  	</header>
+  	<!-- Menu de navigation sur  ordinateur-->
+
+  	<nav >
+  		 <ul>
+      <li class="deroulant"><a href="presentation.html">Présentation ▼ </a>
+        <ul >
+          <li><a href="personnages.html">Personnages</a></li>
+          <li><a href="saisons.html">Saisons</a></li>
+          <li><a href="repliques.html">Répliques</a></li>
+        </ul>
+      </li>
+      <li class="deroulant" ><a href="references.html">Références historiques▼</a>
+        <ul>
+          <li><a href="generales.html" class=active>Générales</a></li>
+          <li><a href="excalibur.html">Excalibur</a></li>
+          <li><a href="quete.html">Quête du Graal</a></li>
+        </ul>
+      </li>
+      <li class="deroulant"><a href="film.html">Film</a></li>
+          <li class="deroulant"><a href="#">Famille Astier ▼</a>
+        <ul >
+          <li><a href="fils.html">Fils</a></li>
+          <li><a href="pere.html">Père</a></li>
+        </ul>
+      </li>
+        <li class="deroulant"><a href="#">Quiz ▼</a>
+        <ul class="sous">
+          <li><a href="quiza.html">Débutant</a></li>
+          <li><a href="quizb.html">Connaisseur</a></li>
+
+        </ul>
+      </li>
+      <li class="deroulant"><a href="contact.html">Contact</a></li>
+    </ul>
+
+   </nav>
+
+  	<!-- Menu de navigation sur tablette et mobile-->
+  <div class="topnav" id="myTopnav">
+                  
+                  <a href="presentation.html">Présentation</a>
+                      <a href="personnages.html" style="text-indent: 2em;">Personnages</a>
+                      <a href="saisons.html" style="text-indent: 2em;">Saisons</a>
+                      <a href="repliques.html" style="text-indent: 2em;">Répliques</a>
+                  <a href="references.html">Réferences Historiques</a>
+  				<a href="generales.html" class=active style="text-indent: 2em;">Générales</a>
+                  <a href="excalibur.html" style="text-indent: 2em;">Excalibur</a>
+                  <a href="quete.html" style="text-indent: 2em;">Quête du Graal </a>
+                  <a href=film.html> Film</a>
+                  <a href=#>Famille Astier</a>
+                   <a href="fils.html" style="text-indent: 2em;">Fils</a>
+                  <a href="pere.html" style="text-indent: 2em;">Père</a>
+                  <a href="#">Quiz</a>
+                  <a href="quiza.html" style="text-indent: 2em;">Débutant</a>
+                  <a href="quizb.html" style="text-indent: 2em;">Connaisseur</a>
+                  <a href="contact.html">Contact</a>
+
+                  <a href="javascript:void(0);" style="font-size:15px;" class="icon container" onclick="deroul(); Bar(this)" >
+                      <div class="bar1"></div>
+                      <div class="bar2"></div>
+                      <div class="bar3"></div>
+                  </a>
+  			</div>
+  			 <!--Contenu principal-->
+  			<div class=conteneur>
+  			<br> <!-- texte historique-->
+  				<p> Deuxième moitié du ve siècle, île de Bretagne. Alors que l’Empire romain s’effondre et que le christianisme s’impose peu à peu face aux dieux païens, le royaume de Logres s’organise autour de son souverain, le roi Arthur, qui règne depuis le château de Kaamelott ; entouré de ses fidèles chevaliers, il s’attelle à la mission que les dieux lui ont confiée : rechercher le Saint Graal. <br>
+
+          Mais cette quête s’annonce plus que difficile, car Arthur est très mal entouré. Ses chevaliers de la Table Ronde sont un faible renfort contre les défis qui se dressent sur la route : peureux, naïfs, stupides ou au contraire violents, archaïques et désordonnés, les troupes de Bretagne ne comprennent pas l’enjeu de la quête du Graal et peinent à se rendre utiles. L’entourage familial du roi n’est guère plus sensé : son quotidien déjà bien chargé est parsemé de conflits avec sa femme Guenièvre ou sa belle-famille. Pour couronner le tout, le pays est régulièrement la cible d’incursions barbares. <br>
+
+          Les premiers jours de paix après la construction de Kaamelott et les débuts de la Quête du Graal cèdent vite la place à un quotidien plus difficile et morose pour le roi, qui doit maîtriser à la fois son caractère dépressif et les incessantes bourdes de son entourage tout en essayant de gouverner son royaume à sa manière, moderne et progressiste. Un combat de tous les jours où le roi légendaire va connaître bien des déboires.</p>
+          <!-- Carte de bretagne-->
+  				<div class="mid">	<img src=../img/map.jpg alt=carte> </div>
+  				
+  			</div>
+  					<!-- Javascript menu burger-->	
+             <script>
+  			  function deroul() {
+  				var x = document.getElementById("myTopnav");
+  				if (x.className === "topnav") {
+  				  x.className += " responsive";
+  				} else {
+  				  x.className = "topnav";
+  				}
+  			  }
+  				function Bar(x) {
+  				x.classList.toggle("change");
+  			  }
+  				</script>
+  					
+  	<footer>
+      <div style="float:left">Marc-Arthur Kadangha/Kaamelott ©</div> 
+      <a  href=#ancre1 style="margin-left: 45%"> Haut de page</a>
+    </footer>
+   </div>
+  </body>
+  </html>

@@ -1,0 +1,677 @@
+	@charset "utf-8";
+
+	*
+	{
+	  -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+	  margin:0;
+	  padding:0;
+	}
+	/*Police folkard importée*/
+
+	@font-face {
+	    font-family: 'folkardregular';
+	    src: url('../font/folkard_-webfont.woff2') format('woff2'),
+	         url('../font/folkard_-webfont.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+        
+	}
+	@font-face {
+    font-family: 'robotoregular';
+    src: url('../font/roboto-regular-webfont.woff2') format('woff2'),
+         url('../font/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+	/* Curseur en forme d épé*/
+	html{ cursor: url("../img/s.cur"), auto;}
+	a:hover{cursor: url("../img/s.cur"), auto;}
+
+	/*Haut de page*/
+	header{
+	   
+	  width: 90%;
+	  background-color: #000000;
+	  text-align: center;
+	  font-size: 2em;
+	  margin:auto;
+	  padding-top: 10px;
+	   
+	}
+	header a {
+	  color: #FFFFFF;
+	  text-decoration: none;
+	}
+	/*Menu sur Ordinateur */
+	nav { 
+	  background-color: #000000;
+	  width:90%;
+	  margin:auto;
+	   border-radius: 20px;
+	   border:1px solid white;
+	 overflow: hidden;
+	  text-align: center;
+	  padding: 2px;
+	    
+	    overflow: hidden;
+	}
+
+
+	nav li {
+	list-style:none !important;
+	color:#000000;
+	padding:3px;
+	font-size:20px;
+	text-decoration:none;
+	text-align: center;
+	  padding: auto;
+	}
+	 
+	nav ul {
+	background-color:#000000;
+	padding:5px;
+	margin:auto;
+
+	  padding: auto;
+	     border-radius: 20px;
+	  
+	}
+	 /*La zone deroulante*/
+	.deroulant {
+	list-style: none;
+	float:left;
+	background-color:#000000;
+	border-radius: 20px;
+	 border:1px solid white;
+	  padding: auto;
+	  margin: 5px;
+	  width: 15%;
+	}
+
+	 
+	nav ul li a {
+	color:#FFFFFF;
+	font-size:15px;
+	text-decoration:none;
+	text-align: center;
+	  padding: auto;
+	}
+	nav ul li a.active{
+	  color: black;
+	  background-color: white;
+	}
+	 
+	nav ul li a:hover {
+	  color: black;
+	  background-color: white;
+	}
+
+	nav ul li ul { display:none; } /* Rend le menu déroulant caché par défaut */
+	 
+	nav ul li:hover ul { /* Affiche la dropNav au survol de la souris avec la class .drop */
+
+	display:list-item !important;
+	position:absolute;
+	margin-top:5px;
+	margin-left:0px;
+	width: 12%;
+	border: 1px solid white;
+	list-style: none;
+	z-index:99999;
+	}
+	 
+	nav ul li:hover ul li {
+	float:none;
+	list-style: none;
+	 border:1px solid white;
+	 border-radius: 20px;
+	}
+	nav ul li:hover ul li:hover {
+	  color:black ;
+	  background-color: white;
+	}
+
+	nav .icon {
+	  display: none;
+	}
+	 li > a:after {content: '';}
+	.topnav{
+	  display: none;
+	}
+	 /*Fin du menu*/
+
+	 /*corps*/
+	 body,html{ font-family: 'folkardregular'; 
+	  
+
+	  height: 100%;
+	  width: 100%;
+	 background: url(../img/bgacc.jpg) fixed center no-repeat;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+
+	 }
+	 /*Pour le texte de la page d acceuil*/
+	 section{ 
+	  text-align: justify;
+	  color: white;
+	  margin: auto;
+	 width: 80%;
+	 padding: 10px;
+	  background-color: black;
+	  height: 1000px;
+	 }
+	section a{ /* couleur rouge-orangé pour lmes hyperliens dans les sections*/
+	  color: orangered;
+	  text-decoration: none;
+	}
+	  /*effet parallaxe*/
+	 .parallax {
+	  
+	  background-image: url("../img/acc.jpg");
+
+	  height: 700px;
+
+	  
+	  background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	}
+	.parallax2 {
+	  
+	  background-image: url("../img/acc2.jpg");
+
+	  height: 800px;
+
+	  
+	  background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	}
+	.tex{
+		background-color: black;
+	}
+
+	/* Pour le contenu centré de la page juste en dessous du menu*/
+	.conteneur{
+	  
+	  text-align: justify;
+	  width: 80%;
+	  color: white;
+	  margin:auto;
+	  padding:20px;
+	}
+	/* Pour le fond de toutes les pages sauf l'acceuil*/
+	.bconteneur{
+	  background: url(../img/bgacc.jpg) fixed center no-repeat;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	}
+	/* Pour les hyperliens des pages présentations et références*/
+	div li a {
+	  
+	  text-decoration: none;
+	  color:orangered;
+	}
+
+	div a:visited {
+	  
+	  text-decoration: none;
+	 
+	}
+	/*page répliques pere fils ; pour espacer les contenus*/
+	.container{
+	  
+	  overflow:auto;
+	  padding:20px;
+	  
+	}
+	/*La difference avec le précédent vient de l utilisation avec les media only*/
+	.containerb{
+	  
+	  overflow:auto;
+	  padding:20px;
+	  
+	}
+	/* Conteneurs divisant les page en 60% pour le texte et 40% pour les images sur les pages repliques pere et fils*/
+	.container60{
+	  width: 50%;
+	  padding: 10px;
+	  float:left;  
+	}
+	.container40{
+	  float: left;
+	  width: 50%;
+	  padding: 10px;
+	}
+
+	.container40 img{
+	  width: 100%;
+	/*FIn conteneur divisant*/
+	}
+
+	.mid{
+	text-align: center;
+	margin:auto;
+	  padding: 5px;
+	}
+	/*Conteneur divisant la page en 2 parties egales*/;
+	.cont50a{
+	  width: 50%;
+	  padding: 2px;
+	  float:left;
+	}
+	.cont50b{
+	  width: 50%;
+	  padding: 2px;
+	  float:left;
+	}
+	.contc{
+	  width: 50%;
+	  padding: 2px;
+	  float:left;
+	}
+
+	/*Fin conteneur divisant*/
+
+	.contd{
+
+	  margin: auto;
+	  text-align: center;
+	  width: 80%;
+	  overflow:auto;
+	  padding:20px;
+	  
+	}/* Pour avoir les Noms des 3 membres de l équipe*/
+	.cont33{
+	  width: 33%;
+	  float: left;
+	  padding: 15px;
+	  font-family: robotoregular;
+	  
+	}
+	.cont33 a{
+		text-decoration: none;
+		color:orangered;
+	}
+	.cont33 img{
+		width: 60%;
+	    border-radius: 20px;
+	 }
+	 figcaption{
+	 	margin-top: 10px;
+	 }
+	/* boutton pour les quiz et les formulaires*/
+	button{
+		background-color: orangered; 
+	  border: none;
+	  color: white;
+	  padding: 10px 20px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: auto;
+	  cursor: pointer;
+	  border-radius: 10px;
+
+	}
+	/*Pour le formulaire*/
+	.contact{
+		border:1px solid white;
+		border-radius: 30px;
+		padding: 20px;
+	}
+	#nom{
+		width: 50%;
+		height: 25px;
+	}
+	#mail{
+		width: 50%;
+		height: 25px;
+	}
+	#comment{
+		width: 75%;
+	}
+	 /*Pied de page*/
+	 footer{
+	  padding: 20px 40px 20px 15%;
+	  width: 100%;
+	   background-color:black;
+	   color: white;
+	   font-family: robotoregular ;
+	   margin:auto;
+	   bottom: 0;
+	   
+	 }
+	 footer a{
+
+	  text-decoration: none;
+	  color :orangered;
+	 }
+
+	 /* Carousel de la page personnage sur ordinateur */
+
+	* {box-sizing: border-box}
+	body { margin:0}
+	.mySlides {display: none}
+	img {vertical-align: middle;
+	}
+
+	/* Contenu d un carousel */
+	.slideshow-container {
+	  max-width: 1000px;
+	  position: relative;
+	  margin: auto;
+	  height: 600px;
+
+	  
+	}
+
+	/* Bouton suivant et précédant */
+	.prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 100px;
+	  width: auto;
+	  padding: 16px;
+	  margin-top: -22px;
+	  color:yellow;
+	  font-weight: bold;
+	  font-size: 18px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover, .next:hover {
+	  background-color: rgba(0,0,0,0.8);
+	}
+
+	/* Texte présent dans le carousel */
+	.text {
+	  color: #ffffff;
+	  font-size: 15px;
+	  padding: 1px 12px;
+	  position: absolute;
+	  top: 71%;
+	  width: 70%;
+	  margin-left: 17%;
+	  
+	}
+	.text h2{
+	  text-align: center;
+	}
+
+	/* Numerotatiin des pages */
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+	/* Effet d animation quand on change de page dans le carousel */
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+
+	@-webkit-keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+
+	@keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+	/* Positionnement de l image dans le carousel*/
+	.dim{
+	  width: 70%;
+	  margin-left:17%;
+	  height: 70%;
+	  margin-bottom: 15%;
+	}
+	/*Fin carousel*/
+
+
+
+	 /*Partie Responsive*/
+
+
+	/*Permet de limiter la largueur à 1280 px*/
+	.lim{
+		max-width: 1280px;
+		margin:auto;
+	}
+
+
+	/*Partie responsive tablette*/
+	@media only screen  and (max-width: 768px){
+	 
+	 /*Menu de navigation sur tablette*/
+	 nav{
+	    display: none;
+	 }
+	 
+	 .topnav {
+	  text-align: center;
+	    display:block;
+	    overflow: hidden;
+	    background-color: #000000;
+	width: 100%;
+	opacity: 0.8;
+	 
+	}
+
+
+	.topnav a {
+	  margin-left: 40%;
+	    
+	    display: block;
+	    text-align: center;
+	    padding: 10px 10px;
+	    text-decoration: none;
+	    font-size: 130%;
+	    color: #FFFFFF;
+	    background-color: black;
+	    border-radius: 20px;
+	    
+	    }
+	.topnav a:hover{
+	  color:#000000;
+	  background-color: #FFFFFF;
+	  text-align: center;
+	}    
+	.topnav a.active{
+	  color:#000000;
+	  background-color: #FFFFFF;
+	}
+
+	.bar1, .bar2, .bar3 {
+	    width: 35px;
+	    height: 5px;
+	    background-color:orangered;
+	    margin: 6px 0;
+	    transition: 0.4s;
+
+	  }
+
+	.change .bar1 {
+	    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	    transform: rotate(-45deg) translate(-9px, 6px);
+	  }
+
+	.change .bar2 {opacity: 0;}
+
+	.change .bar3 {
+	    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+	    transform: rotate(45deg) translate(-8px, -8px);
+	  }
+
+	.topnav a {
+	    display: none;
+	    }
+
+	.topnav a.icon {
+	    float: right;
+	    display: block;
+	  }
+
+	.topnav.responsive {
+	  position: relative;
+	  opacity: 0.85;
+	  }
+
+	.topnav.responsive .icon {
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+
+	  }
+	.topnav.responsive a {
+	    float: none;
+	    display: block;
+	    text-align: left;
+	  }
+
+	.topnav.responsive a:hover {
+	  background-color:#f1f1f1;
+	/*Fin Menu*/
+	  }
+	/*arreter le paralaaxe sur tablette */
+	.parallax {
+	    background-attachment: scroll;
+	  }
+	/*Contenu des pages du carousel*/
+	.slideshow-container{
+	 height: 700px;
+	}
+	/*COnteneurs occupants toute la largeur sur tablette*/
+	.contc{
+	  width: 100%;
+	  padding: 2px;
+	  float:left;
+	  margin: auto;
+	}
+	.cont50b{
+	  width: 100%;
+	  padding: 2px;
+	  float:left;
+	}
+	/*conteneur permettant de changer l ordre d apparition sur mobile*/
+	.containerb{
+	  
+	  overflow:auto;
+	  padding:20px;
+	  display: flex;
+	  flex-direction: column-reverse;
+	  
+	}
+	/*Contenu du texte des carousel de la page personnage*/
+	.text {
+	  color: #ffffff;
+	  font-size: 15px;
+	  padding: 1px 12px;
+	  position: absolute;
+	  top:35%;
+	  width: 70%;
+	  margin-left: 17%;
+	  
+	}
+	/* Pour la page réplique ; de base il debordait*/
+	audio{
+		width: 100%;
+	}
+	}
+	/*Partie Responsive mobile*/
+	@media only screen and (max-width:425px){
+	   header{
+	  font-size: 1.5em;
+	 }
+	 /*Menu burger mobile*/
+
+	.topnav a {
+	  margin-left: 25%; 
+	    float: left;
+	    display: block;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+	    font-size: 130%;
+	    color: #FFFFFF;
+	  }
+	.topnav a {
+	    display: none;
+	    }
+
+	  /*Fin menu*/
+	   /*Contenu des pages carrousels de la page personnage*/
+	.slideshow-container{
+	 height: 700px;
+	}
+	/*ENsemble de conteneur occupants toute la page en largeur*/
+	.container60{
+	  width: 100%
+	}
+	.container40{
+	  width: 100%
+	}
+	.conteneur{
+	  width: 98%;
+	}
+
+	.cont33{
+	  width: 100%;
+	  text-align: center;
+	}
+	/*Conteneur permettant de changer la position des elements sur mobile*/
+	.containerb{
+	  
+	  overflow:auto;
+	  padding:20px;
+	  display: flex;
+	  flex-direction: column-reverse;
+	  
+	}
+
+	/*Fichier audio présent dans le footer de la page d acceuil*/
+	audio{
+	  width: 99%;
+	}
+
+	/* Texte de la page personnage pour mobile*/
+	.text {
+	  color: #ffffff;
+	  font-size: 13px;
+	  padding: 1px 12px;
+	  position: absolute;
+	  top:25%;
+	  width: 70%;
+	  margin-left: 17%;
+	}
+	/* Pour avoir l image avant l audio sur mobile*/
+	.reverse{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	}

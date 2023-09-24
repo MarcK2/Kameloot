@@ -1,0 +1,124 @@
+  <!DOCTYPE html>
+  <html lang="fr">
+  <head>
+    <title>Accueil</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Kamelott">
+    <meta name="author" lang="fr" content="Marc Arthur KADANGHA ">
+    <meta name="Description" content="Ce site est un site vitrine sur la série Kamelott. Il a été en P20  dans le cadre de l UE MM01 de l Université de Technologie de Troyes sous la tutelle de Nicolas THOREL." >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+    <!--Favicon du site-->
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.jpg"/>
+  </head>
+
+  <body>
+     <div class=lim> <!--Limite le contenu à 1280 px-->
+   <header> <!-- Titre de la série en grand -->
+       <a href="index.html"><h1 id=ancre1> Kaamelott</h1></a>
+    </header>
+     
+    <!-- Menu de navigation sur  ordinateur-->
+    <nav >
+       <ul>
+      <li class="deroulant"><a href="pages/presentation.html">Présentation ▼ </a>
+        <ul >
+          <li><a href="pages/personnages.html">Personnages</a></li>
+          <li><a href="pages/saisons.html">Saisons</a></li>
+          <li><a href="pages/repliques.html">Répliques</a></li>
+        </ul>
+      </li>
+      <li class="deroulant" ><a href="pages/references.html">Références historiques▼</a>
+        <ul>
+          <li><a href="pages/generales.html">Générales</a></li>
+          <li><a href="pages/excalibur.html">Excalibur</a></li>
+          <li><a href="pages/quete.html">Quête du Graal</a></li>
+        </ul>
+      </li>
+      <li class="deroulant"><a href="pages/film.html">Film</a></li>
+          <li class="deroulant"><a href="#">Famille Astier ▼</a>
+        <ul >
+          <li><a href="pages/fils.html">Fils</a></li>
+          <li><a href="pages/pere.html">Père</a></li>
+        </ul>
+      </li>
+        <li class="deroulant"><a href="#">Quiz ▼</a>
+        <ul class="sous">
+          <li><a href="pages/quiza.html">Débutant</a></li>
+          <li><a href="pages/quizb.html">Connaisseur</a></li>
+        </ul>
+      </li>
+      <li class="deroulant"><a href="pages/contact.html">Contact</a></li>
+    </ul>
+
+   </nav>
+
+  <br>
+    <!-- Menu de navigation sur tablette et mobile-->
+  <div class="topnav" id="myTopnav">
+                  
+                  <a href="pages/presentation.html">Présentation</a>
+                      <a href="pages/personnages.html" style="text-indent: 2em;">Personnages</a>
+                      <a href="pages/saisons.html" style="text-indent: 2em;">Saisons</a>
+                      <a href="pages/repliques.html" style="text-indent: 2em;">Répliques</a>
+                  <a href="pages/references.html">Réferences Historiques</a>
+          <a href="pages/generales.html" style="text-indent: 2em;">Générales</a>
+                  <a href="pages/excalibur.html" style="text-indent: 2em;">Excalibur</a>
+                  <a href="pages/quete.html" style="text-indent: 2em;">Quête du Graal </a>
+                  <a href=film.html> Film</a>
+                  <a href=#>Famille Astier</a>
+                   <a href="pages/fils.html" style="text-indent: 2em;">Fils</a>
+                  <a href="pages/pere.html" style="text-indent: 2em;">Père</a>
+                  <a href="#">Quiz</a>
+                  <a href="pages/quiza.html" style="text-indent: 2em;">Débutant</a>
+                  <a href="pages/quizb.html" style="text-indent: 2em;">Connaisseur</a>
+                  <a href="pages/contact.html">Contact</a>
+                <div class=iconcontainer>
+                  <a href="javascript:void(0);" style="font-size:15px;" class="icon container" onclick="deroul(); Bar(this)" >
+                      <div class="bar1"></div>
+                      <div class="bar2"></div>
+                      <div class="bar3"></div>
+                  </a> </div>
+        </div>
+        <!-- Effet parallaxe-->
+  <section class=parallax></section>
+        <section class=parallax2>
+          
+                 <!--Contenu descriptif de la série-->
+                <div class="tex">
+                      Kaamelott est une série télévisée française humoristique et dramatique de fantasy historique créée par Alexandre Astier, Alain Kappauf et Jean-Yves Robin et diffusée entre le 3 janvier 2005 et le 31 octobre 2009 sur M6.<br>
+
+                      L'origine du nom de la série est la cité de <a href="https://fr.wikipedia.org/wiki/Camelot">Camelot</a>, avec une orthographe et une graphie particulières faisant ressortir les initiales AA de l'auteur, et les deux T finaux forçant l'homophonie avec camelote.<br>
+
+                      De plus en plus populaire depuis 2006, la série s’inspire de la légende arthurienne et apporte une vision décalée de la légende en présentant un <a href="https://fr.wikipedia.org/wiki/Roi_Arthur">roi Arthur</a> qui peine à être à la hauteur de la tâche que les dieux lui ont confiée. Entouré de chevaliers de la Table ronde passablement incompétents, confronté à la chute de l’Empire romain et aux incessantes incursions barbares, il doit encore trouver le Saint Graal.
+                    </div>
+            
+        </section>
+    
+            <!-- Code java du menu déroulant-->
+             <script>
+          function deroul() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+          }
+          function Bar(x) {
+          x.classList.toggle("change");
+          }
+          </script>
+       <!-- Pied de page-->     
+    <footer>
+      <div style="float:left">Marc-Arthur Kadangha/Kaamelott ©</div> 
+      <!-- Audio: générique de la série-->
+      <div style="margin-left: 55%"> <audio controls autoplay loop>
+                            <source src="audio/kam.mp3" type="audio/mpeg">
+                            <source src="audio/kam.ogg" type="audio/ogg">
+                            </audio></div>
+      </footer>
+
+    </div>     
+  </body>
+  </html>

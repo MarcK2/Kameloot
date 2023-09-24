@@ -1,0 +1,182 @@
+  <!DOCTYPE html>
+  <html lang="fr">
+  <head>
+  	<title>Débutant</title>
+  	<meta charset="utf-8">
+  	<meta name="keywords" content="Kaamelott">
+  	<meta name="author" lang="fr" content="Marc Arthur KADANGHA ">
+  	<meta name="Description" content="Ce site est un site vitrine sur la série Kamelott. Il a été en P20  dans le cadre de l UE MM01 de l Université de Technologie de Troyes sous la tutelle de Nicolas THOREL." >
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="../style/style.css">
+    <!--favicon du site-->
+  	<link rel="shortcut icon" type="image/jpg" href="../img/favicon.jpg"/>
+  </head>
+   
+  <body class=bconteneur>
+   <div class=lim> <!--Limite le contenu à 1280 px-->
+      <header>
+  	   <a href="../index.html"><h1 id=ancre1> Kaamelott</h1></a>
+  	</header>
+  	<!-- Menu de navigation sur  ordinateur-->
+
+  	<nav >
+  		 <ul>
+      <li class="deroulant"><a href="presentation.html">Présentation ▼ </a>
+        <ul >
+          <li><a href="personnages.html">Personnages</a></li>
+          <li><a href="saisons.html">Saisons</a></li>
+          <li><a href="repliques.html">Répliques</a></li>
+        </ul>
+      </li>
+      <li class="deroulant" ><a href="references.html">Références historiques▼</a>
+        <ul>
+          <li><a href="generales.html">Générales</a></li>
+          <li><a href="excalibur.html">Excalibur</a></li>
+          <li><a href="quete.html">Quête du Graal</a></li>
+        </ul>
+      </li>
+      <li class="deroulant"><a href="film.html">Film</a></li>
+          <li class="deroulant"><a href="#">Famille Astier ▼</a>
+        <ul >
+          <li><a href="fils.html">Fils</a></li>
+          <li><a href="pere.html">Père</a></li>
+        </ul>
+      </li>
+        <li class="deroulant"><a href="#">Quiz ▼</a>
+        <ul class="sous">
+          <li><a href="quiza.html"  class=active>Débutant</a></li>
+          <li><a href="quizb.html">Connaisseur</a></li>
+        </ul>
+      </li>
+      <li class="deroulant"><a href="contact.html">Contact</a></li>
+    </ul>
+
+   </nav>
+
+  	<!-- Menu de navigation sur tablette et mobile-->
+  <div class="topnav" id="myTopnav">
+                  
+                  <a href="presentation.html">Présentation</a>
+                      <a href="personnages.html" style="text-indent: 2em;">Personnages</a>
+                      <a href="saisons.html" style="text-indent: 2em;">Saisons</a>
+                      <a href="repliques.html" style="text-indent: 2em;">Répliques</a>
+                  <a href="references.html">Réferences Historiques</a>
+  				<a href="generales.html" style="text-indent: 2em;">Générales</a>
+                  <a href="excalibur.html" style="text-indent: 2em;">Excalibur</a>
+                  <a href="quete.html" style="text-indent: 2em;">Quête du Graal </a>
+                  <a href=film.html> Film</a>
+                  <a href=#>Famille Astier</a>
+                   <a href="fils.html" style="text-indent: 2em;">Fils</a>
+                  <a href="pere.html" style="text-indent: 2em;">Père</a>
+                  <a href="#">Quiz</a>
+                  <a href="quiza.html"  class=active style="text-indent: 2em;">Débutant</a>
+                  <a href="quizb.html" style="text-indent: 2em;">Connaisseur</a>
+                  <a href="contact.html">Contact</a>
+
+                  <a href="javascript:void(0);" style="font-size:15px;" class="icon container" onclick="deroul(); Bar(this)" >
+                      <div class="bar1"></div>
+                      <div class="bar2"></div>
+                      <div class="bar3"></div>
+                  </a>
+  			</div>
+  			
+  			<div class=conteneur>
+  				
+  					<div class=container>
+  						
+  			<br><br>
+    <!--Quiz -->
+  			<form id="form1">
+       <!-- Question , value=1 vrai ; value=0 faux-->
+      <h2>Question 1: Qui est le roi de Logres ?</h2>
+      <label for="var_string"><input type="radio" name="variable" value="0" id="var_string" />Perceval</label> <br> <br>
+      <label for="var_join"><input type="radio" name="variable" value="0" id="var_join" />Lancelot</label><br> <br>
+      <label for="var_info"><input type="radio" name="variable" value="1" id="var_info" />Arthur</label><br> <br>
+      <label for="var_condition"><input type="radio" name="variable" value="0" id="var_condition"/>Léodagan</label><br> <br>
+
+      <h2>Question 2 :Comment s’appelle l’épée du roi ? </h2>
+      <label for="sub_string"><input type="radio" name="sub" value="1" id="sub_string"/>Excalibur</label><br> <br>
+      <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>Al-Ma'thur</label><br> <br>
+      <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />Joyeuse</label><br> <br>
+      <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />Durandil</label><br> <br>
+
+      <h2> Question 3: Qui est le réalisateur de la série ?</h2>
+      <label for="cat_string"><input type="radio" name="con" value="0" id="cat_string" />Lionnel Astier</label><br> <br>
+      <label for="cat_join"><input type="radio" name="con" value="1" id="cat_join" />Alexandre Astier</label><br> <br>
+      <label for="cat_info"><input type="radio" name="con" value="0" id="cat_info" />Dany Boon</label><br> <br>
+      <label for="cat_condition"><input type="radio" name="con" value="0" id="cat_condition" />Jacques Chambon</label><br> <br>
+
+      <h2>Question 4 :Quel contenu sur la série est sorti en 2020 ?</h2>
+      <label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" />La saison 7</label><br> <br>
+      <label for="if_join"><input type="radio" name="ifstate" value="0" id="if_join" /> Une bande dessinée</label><br> <br>
+      <label for="if_info"><input type="radio" name="ifstate" value="0" id="if_info" />Un roman</label><br> <br>
+      <label for="if_condition"><input type="radio" name="ifstate"  value="1" id="if_condition" />Un film</label><br> <br>
+       <!--Bouton pour verifier-->
+      <button type="submit" value="Submit">Verifier</button>
+
+      </form>
+  <br>
+      <p>Votre score : <span id="grade">__</span> /4</p> <!-- score-->
+      <p id="grade2"></p>
+
+
+  			</div>
+        <!--java quiz-->
+            <!--Script repris dans l'exemple du cours-->
+        <script >document.getElementById("form1").onsubmit=function() 
+  {
+      variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+      sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+      con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+      ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+
+
+      result = variable + sub + con + ifstate;
+
+      document.getElementById("grade").innerHTML = result;
+
+      grading = [
+      {score:0,feedback:"Olala mais tu n'as rien lu; Retourne voir ce site."},
+      {score:1,feedback:"Bof, je m'attendais à mieux venant de toi."},
+      {score:2,feedback:"La moyenne, tu peux mieux faire..."},
+      {score:3,feedback:"Pas mal, il t'en manque une."},
+      {score:4,feedback:"Félicitations;T'as tout trouvé "},
+      ];
+        
+      for(i=0; i<grading.length; i++) {
+      if(result == grading[i].score)
+      {result2 = grading[i].feedback + "<br />";}
+      }
+
+
+      document.getElementById("grade2").innerHTML = result2;
+
+
+      return false; // required to not refresh the page; just leave this here
+  } //this ends the submit function</script>
+  						
+
+           <!-- scrpit du menu deroulant-->   
+             <script>
+  			  function deroul() {
+  				var x = document.getElementById("myTopnav");
+  				if (x.className === "topnav") {
+  				  x.className += " responsive";
+  				} else {
+  				  x.className = "topnav";
+  				}
+  			  }
+  				function Bar(x) {
+  				x.classList.toggle("change");
+  			  }
+  				</script>
+  					
+  		<!-- Pied de page-->		
+  	<footer>
+
+  		<div style="float:left">Marc-Arthur Kadangha/Kaamelott ©</div> 
+  		<a  href=#ancre1 style="margin-left: 65%"> Haut de page</a>
+  		</footer>
+  </div>
+  </body>
+  </html>

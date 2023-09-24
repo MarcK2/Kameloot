@@ -1,0 +1,129 @@
+	<!DOCTYPE html>
+	<html lang="fr">
+	<head>
+		<title>Quête</title>
+		<meta charset="utf-8">
+		<meta name="keywords" content="Kaamelott">
+		<meta name="author" lang="fr" content="Marc Arthur KADANGHA ">
+		<meta name="Description" content="Ce site est un site vitrine sur la série Kamelott. Il a été en P20  dans le cadre de l UE MM01 de l Université de Technologie de Troyes sous la tutelle de Nicolas THOREL." >
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../style/style.css">
+		<link rel="shortcut icon" type="image/jpg" href="../img/favicon.jpg"/>
+	</head>
+	 
+	<body class=bconteneur>
+	 <div class=lim>  <!--Limite le contenu à 1280 px-->
+	    <header> <!-- Titre de la série en grand -->
+		   <a href="../index.html"><h1 id=ancre1> Kaamelott</h1></a>
+		</header>
+		<!-- Menu de navigation sur  ordinateur-->
+
+		<nav >
+			 <ul>
+	    <li class="deroulant"><a href="presentation.html">Présentation ▼ </a>
+	      <ul >
+	        <li><a href="personnages.html">Personnages</a></li>
+	        <li><a href="saisons.html">Saisons</a></li>
+	        <li><a href="repliques.html">Répliques</a></li>
+	      </ul>
+	    </li>
+	    <li class="deroulant" ><a href="references.html">Références historiques▼</a>
+	      <ul>
+	        <li><a href="generales.html">Générales</a></li>
+	        <li><a href="excalibur.html">Excalibur</a></li>
+	        <li><a href="quete.html" class=active>Quête du Graal</a></li>
+	      </ul>
+	    </li>
+	    <li class="deroulant"><a href="film.html">Film</a></li>
+	        <li class="deroulant"><a href="#">Famille Astier ▼</a>
+	      <ul >
+	        <li><a href="fils.html">Fils</a></li>
+	        <li><a href="pere.html">Père</a></li>
+	      </ul>
+	    </li>
+	      <li class="deroulant"><a href="#">Quiz ▼</a>
+	      <ul class="sous">
+	        <li><a href="quiza.html">Débutant</a></li>
+	        <li><a href="quizb.html">Connaisseur</a></li>
+	      </ul>
+	    </li>
+	    <li class="deroulant"><a href="contact.html">Contact</a></li>
+	  </ul>
+
+	 </nav>
+
+		<!-- Menu de navigation sur tablette et mobile-->
+	<div class="topnav" id="myTopnav">
+	                
+	                <a href="presentation.html">Présentation</a>
+	                    <a href="personnages.html" style="text-indent: 2em;">Personnages</a>
+	                    <a href="saisons.html" style="text-indent: 2em;">Saisons</a>
+	                    <a href="repliques.html" style="text-indent: 2em;">Répliques</a>
+	                <a href="references.html">Réferences Historiques</a>
+					<a href="generales.html" style="text-indent: 2em;">Générales</a>
+	                <a href="excalibur.html" style="text-indent: 2em;">Excalibur</a>
+	                <a href="quete.html"  class=active style="text-indent: 2em;">Quête du Graal </a>
+	                <a href=film.html> Film</a>
+	                <a href=#>Famille Astier</a>
+	                 <a href="fils.html" style="text-indent: 2em;">Fils</a>
+	                <a href="pere.html" style="text-indent: 2em;">Père</a>
+	                <a href="#">Quiz</a>
+	                <a href="quiza.html" style="text-indent: 2em;">Débutant</a>
+	                <a href="quizb.html" style="text-indent: 2em;">Connaisseur</a>
+	                <a href="contact.html">Contact</a>
+
+	                <a href="javascript:void(0);" style="font-size:15px;" class="icon container" onclick="deroul(); Bar(this)" >
+	                    <div class="bar1"></div>
+	                    <div class="bar2"></div>
+	                    <div class="bar3"></div>
+	                </a>
+				</div>
+				
+				<div class=conteneur> <!--contenu principal de la page-->
+					
+	                     <!-- texte descriptif+image-->  
+						<div class=containerb>
+							<div class=cont50b>
+								<h2> Graal</h2>
+							<p>Le Graal est un objet mythique de la légende arthurienne, objet de la quête des chevaliers de la Table ronde.
+	                         À partir du xiiie siècle, il est assimilé au Saint Calice (la coupe utilisée par Jésus-Christ et ses douze disciples au cours de la Cène, et qui a recueilli le sang du Christ) et prend le nom de Saint Graal. La nature du Graal et le thème de la quête qui lui est associé ont donné lieu à de nombreuses interprétations symboliques ou ésotériques, ainsi qu'à de multiples illustrations artistiques.</p>
+							</div>
+							<div class=cont50b>
+								<img src=../img/graal.jpg alt=ui>
+							</div>
+						</div>
+						
+						<div class=container>
+							<div class=cont50b>
+								<img src=../img/lac.jpg alt=ui>
+							</div>
+							<div class=cont50b>
+	                            <h2>Dame du lac</h2>
+								<p>La fée Viviane ou la Dame du Lac est un mythique personnage des légendes arthuriennes qui donne l'épée Excalibur au roi Arthur, guide le roi mourant vers Avalon après la bataille de Camlann, enchante Merlin, et éduque Lancelot du Lac après la mort de son père et la folie de sa mère. Les différents auteurs et copistes de la légende arthurienne ont donné à la Dame du Lac divers noms tels que Viviane, Niniane, Nyneve ou Nimue.</p>
+							</div>
+						</div>
+		
+				</div>
+				<!-- Javascript du menu  de navigation-->			
+	           <script>
+				  function deroul() {
+					var x = document.getElementById("myTopnav");
+					if (x.className === "topnav") {
+					  x.className += " responsive";
+					} else {
+					  x.className = "topnav";
+					}
+				  }
+					function Bar(x) {
+					x.classList.toggle("change");
+				  }
+					</script>
+						
+		<footer>
+			<div style="float:left">Marc-Arthur Kadangha/Kaamelott ©</div> 
+			<a  href=#ancre1 style="margin-left: 25%"> Haut de page</a>
+			
+	</footer>
+	</div>
+	</body>
+	</html>
